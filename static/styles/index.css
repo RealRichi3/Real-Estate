@@ -27,7 +27,8 @@ body {
 .welcome-pane-container {
   width: 100%;
   height: 500px;
-  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
 }
 .bg {
   background-size: cover;
@@ -40,6 +41,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: -2;
 }
 .overlay {
   position: absolute;
@@ -48,6 +50,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(51, 51, 51, 0.3);
+  z-index: -1;
 }
 
 .header {
@@ -221,7 +224,20 @@ body {
 .profile {
   margin-left: 0;
 }
-/* .add-listing > img {
-  height: 30px;
-  width: 30px;
-} */
+
+.welcome-pane-container .property-details-container {
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  bottom: 30px;
+  background: transparent;
+  /* display: none; */
+}
+.welcome-pane-container .property-details {
+  height: 100%;
+  width: 80%;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  margin: auto;
+}
