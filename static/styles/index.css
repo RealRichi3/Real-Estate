@@ -76,7 +76,6 @@ body {
   -ms-transition: position 10s;
   -o-transition: position 10s;
   transition: all 0.5s ease;
-  /* background-color: #f5f5f54e; */
 }
 .scrolled {
   position: fixed;
@@ -150,7 +149,6 @@ body {
 }
 .add-listing {
   height: 40px;
-  /* width: 150px; */
   padding: 0px 30px;
   border: 1px solid #f5f5f5;
   display: flex;
@@ -219,11 +217,12 @@ body {
   padding: 2px 5px;
   border: 0;
 }
-
 .profile {
   margin-left: 0;
 }
 
+
+/* Property details container for welcome pane */
 .welcome-pane-container > .property-details-container {
   position: absolute;
   width: 100%;
@@ -246,13 +245,10 @@ body {
 .welcome-pane-container .property-details p {
   margin: auto 0;
 }
-/* .welcome-pane-container .property-details > .property-name-address p {
-  margin: 0;
-  padding: 0;
-} */
-.welcome-pane-container .property-name {
+#prop-name {
   font-size: x-large;
   font-weight: 700;
+  color: #333;
 }
 .welcome-pane-container .property-address {
   font-size: small;
@@ -260,7 +256,42 @@ body {
 }
 .welcome-pane-container .property-price {
   position: relative;
-  display: inline;
-  float: right;
-  background: blue;
+  margin-left: auto;
+}
+.welcome-pane-container .property-details div > p:first-child {
+  font-size: small;
+  color: rgb(116, 116, 116);
+}
+.welcome-pane-container .property-details .value {
+  font-size: medium;
+  color: #333;
+  font-weight: 700;
+}
+
+.welcome-pane-container .property-specs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0;
+  margin-left: auto;
+}
+.welcome-pane-container .property-specs > div {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.welcome-pane-container .property-specs .left {
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: #4b85f0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.property-specs .icon {
+  height: 30px;
+  width: 30px;
 }
