@@ -94,7 +94,7 @@ body {
   background-color: transparent;
 }
 .brand-name {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   color: #fff;
   margin: auto 0;
@@ -124,9 +124,19 @@ body {
   height: 50px;
   width: auto;
   padding: 0 20px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.5s ease;
 }
 .nav-button:hover {
   background-color: #4b85f0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.5s ease;
 }
 
 /* Header End - Add Listing, Cart, Profile */
@@ -209,7 +219,7 @@ body {
 }
 
 .profile {
-    margin-left: 0;
+  margin-left: 0;
 }
 /* .add-listing > img {
   height: 30px;
