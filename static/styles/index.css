@@ -219,7 +219,6 @@ body {
   height: 80%;
   width: 90%;
 }
-
 #cart-items-quantity {
   position: absolute;
   top: -10px;
@@ -232,7 +231,6 @@ body {
   padding: 2px 5px;
   border: 0;
 }
-
 .profile {
   margin-left: 0;
 }
@@ -245,7 +243,6 @@ body {
   bottom: 40px;
   background: transparent;
 }
-
 .welcome-pane-container .property-details {
   height: 100%;
   width: 85%;
@@ -258,44 +255,36 @@ body {
   align-items: center;
   padding: 0 50px;
 }
-
 .welcome-pane-container .property-details p {
   margin: auto 0;
 }
-
 #prop-name {
   font-size: x-large;
   font-weight: 700;
   color: #333;
 }
-
 .welcome-pane-container .property-address {
   font-size: small;
   color: rgb(116, 116, 116);
 }
-
 .welcome-pane-container .property-price {
   position: relative;
   margin-left: auto;
 }
-
 .welcome-pane-container .property-details div > p:first-child {
   font-size: small;
   color: rgb(116, 116, 116);
 }
-
 .welcome-pane-container .property-details .value {
   font-size: medium;
   color: #333;
   font-weight: 700;
 }
-
 .welcome-pane-container .property-details .property-price > .value {
   margin: 0;
   font-size: x-large;
   color: #385ed9;
 }
-
 .welcome-pane-container .property-specs {
   display: flex;
   flex-direction: row;
@@ -304,14 +293,12 @@ body {
   margin: auto 0;
   margin-left: auto;
 }
-
 .welcome-pane-container .property-specs > div {
   margin: 10px;
   display: flex;
   flex-direction: row;
   width: 130px;
 }
-
 .welcome-pane-container .property-specs .left {
   margin-right: 10px;
   height: 40px;
@@ -322,7 +309,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .property-specs .icon {
   height: 30px;
   width: 30px;
@@ -335,7 +321,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .image-slider-buttons-container {
   position: absolute;
   top: 45%;
@@ -351,7 +336,6 @@ body {
   -o-transition: position 10s;
   transition: all 0.5s ease;
 }
-
 .image-slider-buttons-container:hover {
   background-color: #f5f5f555;
   color: rgba(51, 51, 51, 0.736);
@@ -362,7 +346,6 @@ body {
   -o-transition: position 10s;
   transition: all 0.5s ease;
 }
-
 .image-slider-buttons {
   width: 50px;
   height: 50px;
@@ -370,16 +353,13 @@ body {
   border: 0px;
   background-color: #f5f5f5;
 }
-
 .image-slider-buttons > img {
   height: 40%;
   width: 40%;
 }
-
 .welcome-pane-container .nextBtn {
   right: 30px;
 }
-
 .welcome-pane-container .prevBtn {
   left: 30px;
 }
@@ -395,30 +375,29 @@ body {
   padding: 0;
   margin: 90px 0;
 }
-
 .popular-locations-container > h3 {
   font-size: xx-large;
   font-weight: 500;
   color: #333;
   margin: 0;
 }
-
-.popular-locations-container > p, .explore-container > p {
+.popular-locations-container > p,
+.explore-container > p {
   width: 600px;
   text-align: center;
   font-size: 14px;
   color: rgb(116, 116, 116);
 }
-
 .popular-locations-container > .popular-locations {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 25px;
   margin: 30px auto;
+  /* width: 100%; */
 }
 .popular-locations > .location {
   height: 200px;
-  width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -439,8 +418,9 @@ body {
   -ms-transition: position 10s;
   -o-transition: position 10s;
   transition: all 0.5s ease;
+  z-index: 2;
 }
-.location .location-details:hover {
+.location:hover .location-details {
   color: #fff;
   bottom: 40px;
   -webkit-transition: all 0.5s ease;
@@ -460,7 +440,32 @@ body {
 .location-details .count {
   font-size: small;
 }
-
+.location > .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(245, 245, 245, 0.2) 100%
+  );
+  border-radius: 5px;
+  z-index: 1;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.2s ease;
+}
+.location:hover > .overlay {
+  visibility: visible;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.5s ease;
+}
 
 /* Explore Apartment Types */
 .explore-container {
@@ -478,13 +483,13 @@ body {
   color: #333;
   margin: 0;
 }
-.explore-list{
+.explore-list {
   display: grid;
   grid-template-columns: repeat(3, 270px);
   grid-template-rows: repeat(2, 250px);
-  grid-template-areas: 
-  "a a b c "
-  "d e e c ";
+  grid-template-areas:
+    "a a b c "
+    "d e e c ";
   gap: 20px;
   margin: 30px;
   width: 90%;
