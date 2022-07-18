@@ -22,7 +22,9 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-
+.container > section {
+  margin-bottom: 100px;
+}
 /* Welcome pane */
 .welcome-pane-container {
   width: 100%;
