@@ -420,7 +420,7 @@ body {
   transition: all 0.5s ease;
   z-index: 2;
 }
-.location:hover .location-details {
+.location:hover .location-details, .explore-list-item:hover .explore-list-item-details {
   color: #fff;
   bottom: 40px;
   -webkit-transition: all 0.5s ease;
@@ -440,13 +440,13 @@ body {
 .location-details .count {
   font-size: small;
 }
-.location > .overlay {
+.location > .overlay, .explore-list-item > .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 0%,
     rgba(245, 245, 245, 0.2) 100%
   );
   border-radius: 5px;
@@ -458,7 +458,7 @@ body {
   -o-transition: position 10s;
   transition: all 0.2s ease;
 }
-.location:hover > .overlay {
+.location:hover > .overlay, .explore-list-item:hover > .overlay {
   visibility: visible;
   -webkit-transition: all 0.5s ease;
   -moz-transition: position 10s;
