@@ -13,165 +13,173 @@
 
 <body>
     <div class="main-container">
-        <section class="welcome-pane-container">
+        <section class="welcome-pane">
             <img class="bg" src="./static/images/properties/property.jpg" alt="">
             <div class="overlay"></div>
-            <!-- Header -->
-            <div class="header">
-                <div class="header-container">
-                    <div class="brand-logo-pane">
-                        <!-- <img src="./static/images/logo.png" alt="logo"> -->
-                        <p class="brand-name">Edge Realty</p>
-                    </div>
-                    <div class="nav-button-container">
-                        <button class="nav-button">
-                            Home
-                        </button>
-                        <button class="nav-button">
-                            Listing
-                        </button>
-                        <button class="nav-button">
-                            Property
-                        </button>
-                        <button class="nav-button">
-                            About
-                        </button>
-                        <button class="nav-button">
-                            Contact Us
-                        </button>
-                    </div>
-                    <div class="header-end">
-                        <button class="add-listing">
-                            <!-- <img src="./static/images/icons/home (2).png" alt=""> -->
-                            <p>Add Listing</p>
-                        </button>
-                        <div class="sub-header-end">
-                            <button class="cart">
-                                <img src="./static/images/icons/shopping-cart-64.png" alt="">
-                                <p id="cart-items-quantity"> 0 </p>
+
+            <div class="welcome-pane-container">
+
+                <!-- Header -->
+                <div class="header">
+                    <div class="header-container">
+                        <div class="brand-logo-pane">
+                            <!-- <img src="./static/images/logo.png" alt="logo"> -->
+                            <p class="brand-name">Edge Realty</p>
+                        </div>
+                        <div class="nav-button-container">
+                            <button class="nav-button">
+                                Home
+                            </button>
+                            <button class="nav-button">
+                                Listing
+                            </button>
+                            <button class="nav-button">
+                                Property
+                            </button>
+                            <button class="nav-button">
+                                About
+                            </button>
+                            <button class="nav-button">
+                                Contact Us
                             </button>
                         </div>
-
-                        <div class="sub-header-end">
-                            <button class="profile">
-                                <img src="./static/images/icons/male-user-64.png" alt="">
+                        <div class="header-end">
+                            <button class="add-listing">
+                                <!-- <img src="./static/images/icons/home (2).png" alt=""> -->
+                                <p>Add Listing</p>
                             </button>
+                            <div class="sub-header-end">
+                                <button class="cart">
+                                    <img src="./static/images/icons/shopping-cart-64.png" alt="">
+                                    <p id="cart-items-quantity"> 0 </p>
+                                </button>
+                            </div>
+
+                            <div class="sub-header-end">
+                                <button class="profile">
+                                    <img src="./static/images/icons/male-user-64.png" alt="">
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property details -->
+                <div class="property-details-container">
+                    <div class="property-details">
+                        <div class="property-name-address">
+                            <p class="property-name" id="prop-name"> Luxury family home</p>
+                            <p class="property-address">84 Woodland St. Cocoa FL 32927</p>
+                        </div>
+                        <div class="property-specs">
+                            <div class="property-rooms">
+                                <div class="left">
+                                    <img class="icon" src="./static/images/icons/bedroom-60.png">
+                                </div>
+                                <div class="right">
+                                    <p>Rooms</p>
+                                    <p class="value">5</p>
+                                </div>
+                            </div>
+                            <div class="property-bathroom">
+                                <div class="left">
+                                    <img class="icon" src="./static/images/icons/bathtub-50.png">
+
+                                </div>
+                                <div class="right">
+                                    <p>Bathrooms</p>
+                                    <p class="value">3</p>
+                                </div>
+                            </div>
+                            <div class="property-area">
+                                <div class="left">
+                                    <img class="icon" src="./static/images/icons/area-64.png">
+                                </div>
+                                <div class="right">
+                                    <p>Area</p>
+                                    <p class="value">4500 Sq Ft</p>
+                                </div>
+                            </div>
                         </div>
 
+                        <div class="property-price">
+                            <p>For Sale</p>
+                            <p class="value">$339,400</p>
+                        </div>
                     </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <div class="image-slider-buttons-container nextBtn">
+                    <button class="next image-slider-buttons">
+                        <img src="./static/images/icons/right-64.png" alt="next">
+                    </button>
+                </div>
+                <div class="image-slider-buttons-container prevBtn">
+                    <button class="prev image-slider-buttons">
+                        <img src="./static/images/icons/left-64 (1).png" alt="next">
+                    </button>
                 </div>
             </div>
 
-            <!-- Property details -->
-            <div class="property-details-container">
-                <div class="property-details">
-                    <div class="property-name-address">
-                        <p class="property-name" id="prop-name"> Luxury family home</p>
-                        <p class="property-address">84 Woodland St. Cocoa FL 32927</p>
-                    </div>
-                    <div class="property-specs">
-                        <div class="property-rooms">
-                            <div class="left">
-                                <img class="icon" src="./static/images/icons/bedroom-60.png">
-                            </div>
-                            <div class="right">
-                                <p>Rooms</p>
-                                <p class="value">5</p>
-                            </div>
-                        </div>
-                        <div class="property-bathroom">
-                            <div class="left">
-                                <img class="icon" src="./static/images/icons/bathtub-50.png">
-
-                            </div>
-                            <div class="right">
-                                <p>Bathrooms</p>
-                                <p class="value">3</p>
-                            </div>
-                        </div>
-                        <div class="property-area">
-                            <div class="left">
-                                <img class="icon" src="./static/images/icons/area-64.png">
-                            </div>
-                            <div class="right">
-                                <p>Area</p>
-                                <p class="value">4500 Sq Ft</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="property-price">
-                        <p>For Sale</p>
-                        <p class="value">$339,400</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <div class="image-slider-buttons-container nextBtn">
-                <button class="next image-slider-buttons">
-                    <img src="./static/images/icons/right-64.png" alt="next">
-                </button>
-            </div>
-            <div class="image-slider-buttons-container prevBtn">
-                <button class="prev image-slider-buttons">
-                    <img src="./static/images/icons/left-64 (1).png" alt="next">
-                </button>
-            </div>
         </section>
 
         <!-- Popular Locations -->
-        <section class="popular-locations-container">
-            <h3> Popular Locations</h3>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores veniam suscipit nisi optio
-                recusandae rem minus, voluptas aut nulla</p>
-            <div class="popular-locations">
-                <div class="location">
-                    <img src="./static/images/properties/property1.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="location-details">
-                        <p class="place"> Lagos </p>
-                        <p class="count">15 listings</p>
+        <section class="popular-locations-main-container">
+            <div class="popular-locations-container">
+                <h3> Popular Locations</h3>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores veniam suscipit nisi
+                    optio
+                    recusandae rem minus, voluptas aut nulla</p>
+                <div class="popular-locations">
+                    <div class="location">
+                        <img src="./static/images/properties/property1.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div class="location-details">
+                            <p class="place"> Lagos </p>
+                            <p class="count">15 listings</p>
+                        </div>
                     </div>
-                </div>
-                <div class="location">
-                    <img src="./static/images/properties/property12.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="location-details">
-                        <p class="place"> Chicago </p>
-                        <p class="count">2 listings</p>
+                    <div class="location">
+                        <img src="./static/images/properties/property12.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div class="location-details">
+                            <p class="place"> Chicago </p>
+                            <p class="count">2 listings</p>
+                        </div>
                     </div>
-                </div>
-                <div class="location">
-                    <img src="./static/images/properties/property13.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="location-details">
-                        <p class="place"> Abuja </p>
-                        <p class="count">22 listings</p>
+                    <div class="location">
+                        <img src="./static/images/properties/property13.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div class="location-details">
+                            <p class="place"> Abuja </p>
+                            <p class="count">22 listings</p>
+                        </div>
                     </div>
-                </div>
-                <div class="location">
-                    <img src="./static/images/properties/property14.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="location-details">
-                        <p class="place"> Miami </p>
-                        <p class="count">19 listings</p>
+                    <div class="location">
+                        <img src="./static/images/properties/property14.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div class="location-details">
+                            <p class="place"> Miami </p>
+                            <p class="count">19 listings</p>
+                        </div>
                     </div>
-                </div>
-                <div class="location">
-                    <img src="./static/images/properties/property10.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="location-details">
-                        <p class="place"> Dallas </p>
-                        <p class="count">11 listings</p>
+                    <div class="location">
+                        <img src="./static/images/properties/property10.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div class="location-details">
+                            <p class="place"> Dallas </p>
+                            <p class="count">11 listings</p>
+                        </div>
                     </div>
-                </div>
-                <div class="location">
-                    <img src="./static/images/properties/property16.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="location-details">
-                        <p class="place"> New Jersey </p>
-                        <p class="count">12 listings</p>
+                    <div class="location">
+                        <img src="./static/images/properties/property16.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div class="location-details">
+                            <p class="place"> New Jersey </p>
+                            <p class="count">12 listings</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -543,43 +551,55 @@
 
         <!-- Footer -->
         <section class="footer">
-            <div class="footer-head">
-                <div class="company-logo">
-                    <img src="" alt="">
-                </div>
-                <h3 class="company-name">EDGE REALTY</h3>
-            </div>
-
-            <div class="footer-body">
-                <div>
-                    <div>
-                        <h3>ABOUT</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi praesentium quas animi
-                            voluptatum minima, reprehenderit officia temporibus itaque non quia, sit vero quam, ipsum
-                            incidunt sunt exercitationem! Animi consequatur aperiam neque commodi molestiae voluptatibus
-                            laudantium deleniti eaque nam! Reiciendis, neque! Doloribus quibusdam libero nostrum odit.
-                            Recusandae provident excepturi at hic!</p>
+            <div class="footer-container">
+                <div class="footer-head">
+                    <div class="company-logo">
+                        <img src="" alt="">
                     </div>
+                    <h3 class="company-name">EDGE REALTY</h3>
+                </div>
 
+                <div class="footer-body">
                     <div>
-                        <h3>CONTACT INFO</h3>
-                        <p class="callcenter">Callcenter: <span class="phone-number"> +44 898 0909 900</span></p>
-                        <p class="fax">Fax: <span class="fax-number"> 99-999-99 </span></p>
-                        <p class="email">Email: <span class="email-address">contact@edgerealty.com</span></p>
+                        <div>
+                            <h3>ABOUT</h3>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi praesentium quas
+                                animi
+                                voluptatum minima, reprehenderit officia temporibus itaque non quia, sit vero quam,
+                                ipsum
+                                incidunt sunt exercitationem! Animi consequatur aperiam neque commodi molestiae
+                                voluptatibus
+                                laudantium deleniti eaque nam! Reiciendis, neque! Doloribus quibusdam libero nostrum
+                                odit.
+                                Recusandae provident excepturi at hic!</p>
+                        </div>
 
-                        <p class="address"></p>
+                        <div>
+                            <h3>CONTACT INFO</h3>
+                            <p class="callcenter">Callcenter: <span class="phone-number"> +44 898 0909 900</span></p>
+                            <p class="fax">Fax: <span class="fax-number"> 99-999-99 </span></p>
+                            <p class="email">Email: <span class="email-address">contact@edgerealty.com</span></p>
+
+                            <p class="address"></p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <a href=""><button class="facebook"><img src="./static/images/icons/facebook-footer.png"
+                                    alt=""></button></a>
+                        <a href=""><button class="twitter"><img src="./static/images/icons/twitter-footer.png"
+                                    alt=""></button></a>
+                        <a href=""><button class="youtube"><img src="./static/images/icons/youtube.png"
+                                    alt=""></button></a>
+                        <a href=""><button class="instagram"><img src="./static/images/icons/instagram.png"
+                                    alt=""></button></a>
                     </div>
                 </div>
-                <div class="socials">
-                    <a href=""><button class="facebook"><img src="./static/images/icons/facebook-footer.png" alt=""></button></a>
-                    <a href=""><button class="twitter"><img src="./static/images/icons/twitter-footer.png" alt=""></button></a>
-                    <a href=""><button class="youtube"><img src="./static/images/icons/youtube.png" alt=""></button></a>
-                    <a href=""><button class="instagram"><img src="./static/images/icons/instagram.png" alt=""></button></a>
-                </div>
+
             </div>
             <div class="footer-foot">
                 <p>&copy; 2022 Edge Realty All rights reserved | Designed by Richie Moluno</p>
             </div>
+
         </section>
     </div>
 
