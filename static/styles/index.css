@@ -42,6 +42,7 @@ section {
   justify-content: center;
   position: relative;
 }
+
 .welcome-pane-container {
   width: 100%;
   height: 100%;
@@ -135,10 +136,10 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .nav-button {
-  margin: 0 10px;
   color: white;
   font-size: medium;
   font-weight: bold;
@@ -168,6 +169,8 @@ section {
   -o-transition: position 10s;
   transition: all 0.5s ease;
 }
+
+/* Menu bar button */
 
 /* Header End - Add Listing, Cart, Profile */
 .header-end {
@@ -214,7 +217,8 @@ section {
 }
 
 .cart,
-.profile {
+.profile,
+.menu-button {
   margin: auto 0;
   margin-left: 20px;
   height: 60px;
@@ -224,7 +228,8 @@ section {
 }
 
 .cart:hover,
-.profile:hover {
+.profile:hover,
+.menu-button:hover {
   background-color: #f5f5f54d;
   color: rgba(51, 51, 51, 0.736);
   border-radius: 50%;
@@ -236,10 +241,19 @@ section {
 }
 
 .cart>img,
-.profile>img {
+.profile>img,
+.menu-button>img {
   height: 80%;
   width: 90%;
 }
+.menubar {
+  border-left: 1px solid #f5f5f5;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 #cart-items-quantity {
   position: absolute;
@@ -335,7 +349,7 @@ section {
   margin: 10px;
   display: flex;
   flex-direction: row;
-  width: 130px;
+  width: 150px;
 }
 
 .welcome-pane-container .property-specs .left {
@@ -418,6 +432,7 @@ section {
   align-items: center;
   justify-content: center;
 }
+
 .popular-locations-container {
   width: 100%;
   height: 100%;
@@ -479,6 +494,7 @@ section {
   transition: all 0.5s ease;
   z-index: 2;
 }
+
 .location:hover .location-details,
 .explore-list-item:hover .explore-list-item-details {
   color: #fff;
@@ -489,20 +505,23 @@ section {
   -o-transition: position 10s;
   transition: all 0.5s ease;
 }
+
 .location-details p {
   margin: 0;
   padding: 0;
 }
+
 .location-details .place {
   font-size: larger;
   font-weight: 700;
 }
+
 .location-details .count {
   font-size: small;
 }
 
-.location > .overlay,
-.explore-list-item > .overlay {
+.location>.overlay,
+.explore-list-item>.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -537,6 +556,7 @@ section {
   align-items: center;
   width: 100%;
 }
+
 .explore-container {
   width: 100%;
   display: flex;
@@ -546,12 +566,14 @@ section {
   padding: 0;
   margin: 90px 0;
 }
+
 .explore-container>h3 {
   font-size: xx-large;
   font-weight: 500;
   color: #333;
   margin: 0;
 }
+
 .explore-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -565,23 +587,28 @@ section {
   width: 100%;
   box-sizing: border-box;
 }
+
 .explore1 {
   grid-area: a;
 }
+
 .explore2 {
   grid-area: b;
 }
+
 .explore3 {
   grid-area: c;
 }
+
 .explore4 {
   grid-area: d;
 }
+
 .explore5 {
   grid-area: e;
 }
 
-.explore-list >.explore-list-item {
+.explore-list>.explore-list-item {
   position: relative;
   width: 100%;
   height: 100%;
@@ -596,7 +623,8 @@ section {
   border-radius: 5px;
   overflow: hidden;
 }
-.explore-item-image > img {
+
+.explore-item-image>img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -725,6 +753,7 @@ section {
   height: 100%;
   width: 100%;
 }
+
 .featured-property>.property-image>.tags {
   height: 25px;
   color: #f5f5f5;
@@ -1670,6 +1699,7 @@ h2 {
   max-width: 1900px;
   padding: 0 50px;
 }
+
 .welcome-pane-container {
   padding: 0;
 }
