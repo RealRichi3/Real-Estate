@@ -433,7 +433,7 @@ section {
 
 .popular-locations-container>p,
 .explore-container>p {
-  width: 600px;
+  /* width: 600px; */
   text-align: center;
   font-size: 14px;
   color: rgb(116, 116, 116);
@@ -474,7 +474,6 @@ section {
   transition: all 0.5s ease;
   z-index: 2;
 }
-
 .location:hover .location-details,
 .explore-list-item:hover .explore-list-item-details {
   color: #fff;
@@ -485,23 +484,20 @@ section {
   -o-transition: position 10s;
   transition: all 0.5s ease;
 }
-
 .location-details p {
   margin: 0;
   padding: 0;
 }
-
 .location-details .place {
   font-size: larger;
   font-weight: 700;
 }
-
 .location-details .count {
   font-size: small;
 }
 
-.location>.overlay,
-.explore-list-item>.overlay {
+.location > .overlay,
+.explore-list-item > .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -528,6 +524,7 @@ section {
   transition: all 0.5s ease;
 }
 
+
 /* Explore Apartment Types */
 .explore {
   display: flex;
@@ -543,59 +540,60 @@ section {
   padding: 0;
   margin: 90px 0;
 }
-
 .explore-container>h3 {
   font-size: xx-large;
   font-weight: 500;
   color: #333;
   margin: 0;
 }
-
 .explore-list {
   display: grid;
-  grid-template-columns: repeat(3, 270px);
-  grid-template-rows: repeat(2, 250px);
+  grid-template-columns: repeat(4, minmax(270px, 1fr));
+  grid-template-rows: repeat(2, minmax(200px, 1fr));
   grid-template-areas:
     "a a b c "
     "d e e c ";
   gap: 20px;
   margin: 30px;
-  width: 90%;
-  height: 600px;
+  height: 500px;
+  width: 100%;
+  box-sizing: border-box;
 }
-
 .explore1 {
   grid-area: a;
 }
-
 .explore2 {
   grid-area: b;
 }
-
 .explore3 {
   grid-area: c;
 }
-
 .explore4 {
   grid-area: d;
 }
-
 .explore5 {
   grid-area: e;
 }
 
 .explore-list>.explore-list-item {
+  position: relative;
   width: 100%;
+  height: 100%;
   margin: 0;
   flex-direction: column;
-  position: relative;
 }
 
-.explore-list>.explore-list-item>img {
+.explore-item-image {
   height: 100%;
   width: 100%;
-  min-width: 270px;
+  position: relative;
   border-radius: 5px;
+  overflow: hidden;
+}
+.explore-item-image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .explore-list-item .overlay {
@@ -612,7 +610,7 @@ section {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  width: 100%;
+  /* width: 100%; */
   color: #f5f5f5;
   -webkit-transition: all 0.5s ease;
   -moz-transition: position 10s;
