@@ -136,7 +136,6 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
 .nav-button {
@@ -229,6 +228,7 @@ section {
 }
 .menu-button {
   border-radius: 5px;
+  display: none;
 }
 
 .cart:hover,
@@ -285,6 +285,9 @@ section {
   align-items: center;
   justify-content: center;
 }
+.welcome-pane-container .property-name-address {
+  margin-right: auto;
+}
 
 .welcome-pane-container .property-details {
   height: 100%;
@@ -304,6 +307,10 @@ section {
 .welcome-pane-container .property-details p {
   margin: auto 0;
 }
+.welcome-pane-container .property-details .other-details {
+  display: flex;
+  flex-direction: row;
+}
 
 #prop-name {
   font-size: x-large;
@@ -317,10 +324,17 @@ section {
 }
 
 .welcome-pane-container .property-price {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
   margin-left: auto;
+  max-height: auto;;
 }
-
+.welcome-pane-container .property-price p {
+  margin: 0;
+}
 .welcome-pane-container .property-details div>p:first-child {
   font-size: small;
   color: rgb(116, 116, 116);
@@ -1704,4 +1718,121 @@ h2 {
 
 .welcome-pane-container {
   padding: 0;
+}
+
+
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .nav-button-container {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  .welcome-pane-container .property-details {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1056px) {
+  .welcome-pane-container .property-details-container{
+    bottom: 60px;
+  }
+  .welcome-pane-container .property-details {
+    padding: 10px 50px;
+    height: auto;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+  }
+  .welcome-pane-container .property-details > * {
+    width: 100%;
+    margin: 5px;
+  }
+  .welcome-pane-container .property-specs {
+    margin: 5px;
+    margin-left: 0;
+  }
+  .welcome-pane-container .property-price{
+    padding: auto;
+    margin-left: auto;
+  }
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header-container{
+    padding: 0;
+  }
+  .brand-name {
+    font-size: x-large;
+  }
+  .add-listing, .cart {
+    display: none;
+  }
+  .welcome-pane-container .property-details-container{
+    bottom: 60px;
+    height: 250px;
+    width: 100%;
+  }
+  .welcome-pane-container .property-details {
+    padding: 10px 20px;
+    height: auto;
+    width: 90%;
+  }
+  .welcome-pane-container .property-specs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .welcome-pane-container .property-price{
+    padding: auto;
+    margin-left: auto;
+    margin-bottom: auto;;
+  }
+  .welcome-pane-container .property-specs > div {
+    margin: 0;
+    width: auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .welcome-pane-container .property-details {
+    padding: 10px 20px;
+    height: auto;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+  }
+  .welcome-pane-container .property-details .other-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: left ;
+  }
+  .welcome-pane-container .property-price {
+    margin: 0;
+    margin-top: 10px
+  }
+  .welcome-pane-container .image-slider-buttons-container {
+    top: 30%
+  }
+  .welcome-pane-container .nextBtn {
+    right: 10px;
+  }
+  .welcome-pane-container .prevBtn {
+    left: 10px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .welcome-pane-container .property-specs {
+    grid-template-columns: 1fr;
+  }
 }
