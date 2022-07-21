@@ -19,6 +19,7 @@ body {
 h3,
 h4 {
   margin: 0;
+  text-align: center;
 }
 
 .main-container {
@@ -1798,6 +1799,19 @@ h2 {
     margin: 0;
     width: auto;
   }
+  .popular-locations-container > .popular-locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .popular-locations > .location {
+    height: 200px;
+  }
+  .popular-locations > .location > .location-details {
+    width: auto;
+    left: 10px;
+    bottom: 10px;
+  }
 }
 
 
@@ -1827,6 +1841,11 @@ h2 {
   }
   .welcome-pane-container .prevBtn {
     left: 10px;
+  }
+  .popular-locations-container > .popular-locations {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 }
 
