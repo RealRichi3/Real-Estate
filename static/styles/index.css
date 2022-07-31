@@ -1552,13 +1552,6 @@ h2 {
 .partners-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: 40px; */
-  /* padding: 0; */
   align-items: center;
   width: 100%;
 }
@@ -1784,10 +1777,21 @@ h2 {
     gap: 10px;
   }
 }
+
 /* Mobile */
 @media (max-width: 768px) {
   .header-container {
     padding: 0;
+  }
+  .welcome-pane-container,
+  .featured-properties-container,
+  .partners-container,
+  .why-choose-us-container,
+  .container,
+  .popular-locations-container,
+  .explore-container,
+  .footer {
+    padding: 20px;
   }
   .brand-name {
     font-size: x-large;
